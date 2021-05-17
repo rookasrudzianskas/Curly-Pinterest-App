@@ -7,18 +7,15 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import TextsmsIcon from '@material-ui/icons/Textsms';
 import FaceIcon from '@material-ui/icons/Face';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
-const Header = () => {
+const Header = ({ onSubmit }) => {
 
     const [input, setInput] = useState("");
-    console.log(input);
 
     const onSearchSubmit = (e) => {
         e.preventDefault();
         // console.log("DONE");
-
-
-
-
+        onSubmit(input);
+        console.log("search term", input);
 
         setInput('');
 
