@@ -35,5 +35,12 @@ const Container = styled.div`
     cursor: pointer;
     border-radius: 16px;
     object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  img:hover {
+    transform: scale(1.3);
+    box-shadow: 17px 10px 58px -6px rgba(0,0,0,0.75);
+
   }
 `

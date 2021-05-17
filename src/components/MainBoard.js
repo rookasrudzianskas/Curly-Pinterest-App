@@ -26,11 +26,15 @@ const Wrapper = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  margin-top: 15px;
+  margin-top: 40px;
   justify-content: center;
 `
 const Container = styled.div`
   display: flex;
+  column-count: 5;
+  column-gap: 60px;
+  margin: 0 auto;
+  height: 100%;
   width: 80%;
   background-color: white;
 `
