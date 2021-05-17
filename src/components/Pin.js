@@ -21,6 +21,7 @@ export default Pin;
 const Wrapper = styled.div`
   display: inline-flex;
   padding: 8px;
+  margin: 20px;
 `
 const Container = styled.div`
   display: flex;
@@ -35,11 +36,11 @@ const Container = styled.div`
     cursor: pointer;
     border-radius: 16px;
     object-fit: cover;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   
   img:hover {
-    transform: scale(1.3);
+    transform: scale(1.15);
     box-shadow: 17px 10px 58px -6px rgba(0,0,0,0.75);
 
   }

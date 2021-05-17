@@ -30,13 +30,14 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 const Container = styled.div`
-  display: flex;
   column-count: 5;
-  column-gap: 60px;
+  column-gap: 150px;
   margin: 0 auto;
   height: 100%;
+  max-width: 1260px;
   width: 80%;
   background-color: white;
+  align-items: flex-start;
 `
 
 
