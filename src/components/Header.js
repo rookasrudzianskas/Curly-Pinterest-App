@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import styled from 'styled-components'
 import {Icon, IconButton} from "@material-ui/core";
@@ -8,6 +8,10 @@ import TextsmsIcon from '@material-ui/icons/Textsms';
 import FaceIcon from '@material-ui/icons/Face';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 const Header = () => {
+
+    const [input, setInput] = useState("");
+    console.log(input);
+
     return (
         <div>
             <Wrapper>
@@ -31,7 +35,7 @@ const Header = () => {
                         </IconButton>
 
                         <form action="">
-                            <input type="text"/>
+                            <input type="text" onChange={e => setInput(e.target.value)} value={input}/>
                             <button type="submit">Search</button>
                         </form>
                     </SearchBarWrapper>
