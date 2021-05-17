@@ -1,8 +1,8 @@
 import React from 'react';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import styled from 'styled-components'
-import {IconButton} from "@material-ui/core";
-
+import {Icon, IconButton} from "@material-ui/core";
+import SearchIcon from '@material-ui/icons/Search';
 const Header = () => {
     return (
         <div>
@@ -22,7 +22,14 @@ const Header = () => {
 
                 <SearchWrapper>
                     <SearchBarWrapper>
+                        <IconButton>
+                            <SearchIcon />
+                        </IconButton>
 
+                        <form action="">
+                            <input type="text"/>
+                            <button type="submit">Search</button>
+                        </form>
                     </SearchBarWrapper>
                 </SearchWrapper>
 
@@ -85,8 +92,34 @@ const FollowingButton = styled(HomeButtons)`
   }
 `
 const SearchWrapper = styled.div`
-  
+  flex: 1;
 
 `
-const SearchBarWrapper = styled.div``
+const SearchBarWrapper = styled.div`
+  background-color: #efefef;
+  display: flex;
+  height: 48px;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  
+  form {
+    display: flex;
+    flex: 1;
+  }
+  
+  form > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    display: flex;
+  }
+  
+  form > button {
+    display: none;
+  }
+`
 const IconsWrapper = styled.div``
