@@ -48,11 +48,47 @@ const Wrapper = styled.div`
 const LogoWrapper = styled.div`
   .MuiSvgIcon-root{
     color: #e60023;
-    font-size: ;
+    font-size: 32px;
+    cursor: pointer;
   }
 `
-const HomePageButton = styled.div``
-const FollowingButton = styled.div``
+const HomePageButton = styled.div`
+  display: flex;
+  height: 48px;
+  min-width: 123px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  cursor: pointer;
+  background-color: rgb(17, 17, 17);
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+`
+const FollowingButton = styled.div`
+  display: flex;
+  height: 48px;
+  min-width: 123px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  cursor: pointer;
+  background-color: white;
+
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }
+  
+  :hover {
+    background-color: #e1e1e1;
+  }
+`
 const SearchWrapper = styled.div``
 const SearchBarWrapper = styled.div``
 const IconsWrapper = styled.div``
