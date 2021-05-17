@@ -52,7 +52,8 @@ const LogoWrapper = styled.div`
     cursor: pointer;
   }
 `
-const HomePageButton = styled.div`
+
+const HomeButtons = styled.div`
   display: flex;
   height: 48px;
   min-width: 123px;
@@ -60,6 +61,8 @@ const HomePageButton = styled.div`
   justify-content: center;
   border-radius: 24px;
   cursor: pointer;
+`
+const HomePageButton = styled(HomeButtons)`
   background-color: rgb(17, 17, 17);
   
   a {
@@ -68,16 +71,8 @@ const HomePageButton = styled.div`
     font-weight: 700;
   }
 `
-const FollowingButton = styled.div`
-  display: flex;
-  height: 48px;
-  min-width: 123px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 24px;
-  cursor: pointer;
+const FollowingButton = styled(HomeButtons)`
   background-color: white;
-
 
   a {
     text-decoration: none;
@@ -89,6 +84,9 @@ const FollowingButton = styled.div`
     background-color: #e1e1e1;
   }
 `
-const SearchWrapper = styled.div``
+const SearchWrapper = styled.div`
+  
+
+`
 const SearchBarWrapper = styled.div``
 const IconsWrapper = styled.div``
