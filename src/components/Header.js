@@ -12,6 +12,18 @@ const Header = () => {
     const [input, setInput] = useState("");
     console.log(input);
 
+    const onSearchSubmit = (e) => {
+        e.preventDefault();
+        // console.log("DONE");
+
+
+
+
+
+        setInput('');
+
+    }
+
     return (
         <div>
             <Wrapper>
@@ -36,7 +48,7 @@ const Header = () => {
 
                         <form action="">
                             <input type="text" onChange={e => setInput(e.target.value)} value={input}/>
-                            <button type="submit">Search</button>
+                            <button type="submit" onClick={onSearchSubmit}>Search</button>
                         </form>
                     </SearchBarWrapper>
                 </SearchWrapper>
