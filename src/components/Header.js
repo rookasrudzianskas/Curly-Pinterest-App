@@ -3,6 +3,10 @@ import PinterestIcon from '@material-ui/icons/Pinterest';
 import styled from 'styled-components'
 import {Icon, IconButton} from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import TextsmsIcon from '@material-ui/icons/Textsms';
+import FaceIcon from '@material-ui/icons/Face';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 const Header = () => {
     return (
         <div>
@@ -34,7 +38,21 @@ const Header = () => {
                 </SearchWrapper>
 
                 <IconsWrapper>
+                    <IconButton>
+                        <NotificationsIcon />
+                    </IconButton>
 
+                    <IconButton>
+                        <TextsmsIcon />
+                    </IconButton>
+
+                    <IconButton>
+                        <FaceIcon />
+                    </IconButton>
+
+                    <IconButton>
+                        <KeyboardArrowDownIcon />
+                    </IconButton>
                 </IconsWrapper>
             </Wrapper>
         </div>
@@ -122,4 +140,7 @@ const SearchBarWrapper = styled.div`
     display: none;
   }
 `
-const IconsWrapper = styled.div``
+const IconsWrapper = styled.div`
+  padding-left: 20px;
+
+`
